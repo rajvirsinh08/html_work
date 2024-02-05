@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body onload="document.form1.email.focus()">
+    <form name="form1" action="#" name="validation">
+        <div
+            class="d-flex flex-column w-100 vh-100 bg-white text-cornflowerblue align-items-center justify-content-center ">
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous">
+
+                </script>
+
+            <div class="container " style="width:400px;text-align:center">
+
+                <table class="table table-bordered">
+                    <tr>
+                        <td style="font-size: 30px;color: deepskyblue;">Log In
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" class="form-control" id="email" placeholder="Enter Email Address ">
+                            <div id="successemail" style="color:blue;text-align: left;"></div>
+                            <!-- <input type="button" class="btn btn-outline-success" name="submit" value="Varify"
+                                onclick="ValidateEmail(document.form1.text1)"> -->
+                            <div id="erroremail" style="color: crimson;text-align: left;"></div>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td><input type="password" class="form-control" id="pswd" placeholder="Enter Password">
+                            <div id="errorpswd" style="color: crimson;text-align: left;"></div>
+                            <div id="successpswd" style="color:blue;text-align: left;"></div>
+
+                            <!-- <input type="button" id="checkpswd" value="check"
+                                onclick="passwordvalid(document.form1.text1)"> -->
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" id="checkpswd"
+                                onclick="passwordvalid();ValidateEmail(document.form1.email);">
+                                Sign In
+                            </button>
+
+                            <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Hello,Welcome To Your Account!!
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="link-offse
+                    t-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href="forgetpasssword.html">
+                                Forgotten Password?
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="signup page.html">
+                                <button type="button" class="btn btn-outline-success">Create New
+                                    Account</button></a>
+                        </td>
+                    </tr>
+
+
+                </table>
+
+            </div>
+
+
+        </div>
+        <script src="indexscript.js"></script>
+    </form>
+</body>
+
+</html>
